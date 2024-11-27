@@ -1,6 +1,0 @@
-train: D:\studia\FO\data\train\images
-val: D:\studia\FO\data\valid\images
-test: D:\studia\FO\data\test\images
-
-nc: 8
-names: ['Earth', 'Jupiter', 'Mars', 'Mercury', 'Neptune', 'Saturn', 'Uranus', 'Venus']
