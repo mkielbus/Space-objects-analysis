@@ -24,3 +24,4 @@ names: ['Earth', 'Jupiter', 'Mars', 'Mercury', 'Neptune', 'Saturn', 'Uranus', 'V
 ## Uruchomienie
 - Skrypt `train.py` pobierze model oraz rozpocznie jego trenowanie na danych z folderu data/train
 - **Skrypt należy uruchamiać z terminala**, będąc w folderze głównym projektu
+- Wyniki każdego uruchomienia zapisywane są w folderze `runs` w folderze głównym projektu
