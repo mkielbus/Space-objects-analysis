@@ -1,8 +1,7 @@
 from flask import Flask, request, render_template, redirect, url_for
 from model_wrapper import ModelWrapper
 
-
-app = Flask(__name__, template_folder="./templates/html/", static_folder="./static/")
+app = Flask(__name__, template_folder="templates/html", static_folder="static")
 
 model_wrapper = ModelWrapper("trained_model.pt")
 
@@ -13,9 +12,9 @@ def isFileAllowed(filename):
 
 @app.route('/main', methods=['GET'])
 def main():
-    return render_template('predict.html')
+    return render_template('detect.html')
 
-@app.route('/predict', methods=['POST'])
+@app.route('/detect', methods=['POST'])
 def predictClassForFile():
     if 'image' not in request.files:
         return redirect(url_for('renderError', message="Nie przekazano żadnego pliku"))
@@ -23,14 +22,14 @@ def predictClassForFile():
     if image_file.filename == '':
         return redirect(url_for('renderError', message="Nazwa pliku jest pusta"))
     if image_file and isFileAllowed(image_file.filename):
-        image_class = "Przykładowa klasa obrazu"
         model_wrapper.predict(image_file)
-        return redirect(url_for('renderResults', image_class=image_class))
+        return redirect(url_for('renderResults', image_filename=f"result_{image_file.filename}"))
     return redirect(url_for('renderError', message="Niedozwolony format pliku"))
 
-@app.route('/predict/class/<image_class>')
-def renderResults(image_class):
-    return render_template('results.html', image_class=image_class)
+@app.route('/detect/<image_filename>')
+def renderResults(image_filename):
+    image_url = url_for('static', filename=f'results/{image_filename}')
+    return render_template('results.html', image_url=image_url)
 
 @app.route('/error/<message>')
 def renderError(message):

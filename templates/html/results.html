@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Klasa obrazu</title>
+    <title>Detekcje w obrazie</title>
     <link rel="stylesheet" href="../../static/css/results.css" />
   </head>
   <body>
-    <h1>Wynik klasyfikacji obrazu</h1>
-    <p>Klasa obrazu: <strong>{{ image_class }}</strong></p>
+    <h1>Wynik detekcji w obrazie</h1>
+    <img src="{{ image_url }}" alt="Wynikowy obraz" />
     <a href="/main">Powrót do strony głównej</a>
   </body>
 </html>

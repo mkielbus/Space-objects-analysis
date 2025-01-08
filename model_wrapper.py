@@ -4,7 +4,7 @@ from pathlib import Path
 
 PROJECT_DIR = Path(__file__).parent
 MODEL_DIR = PROJECT_DIR/"models"
-IMG_DIR = PROJECT_DIR/"images"
+IMG_DIR = PROJECT_DIR/"static/results"
 
 
 class ModelWrapper():
