@@ -1,0 +1,38 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f8d7da;
+    color: #721c24;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    background-color: #f5c6cb;
+    color: #721c24;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #f1b0b7;
+    color: #491217;
+}
