@@ -1,2 +1,4 @@
 data/
 runs/
+images/
+**/__pycache__/
