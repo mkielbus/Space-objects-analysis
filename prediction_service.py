@@ -13,7 +13,7 @@ def main():
 @app.route('/predict', methods=['POST'])
 def predictClassForFile():
     if 'image' not in request.files:
-        return redirect(url_for('renderError', message="Nie przekazano żadnego pliku "))
+        return redirect(url_for('renderError', message="Nie przekazano żadnego pliku"))
     image_file = request.files['image']
     if image_file.filename == '':
         return redirect(url_for('renderError', message="Nazwa pliku jest pusta"))
