@@ -44,7 +44,7 @@ Sktypt uruchomi serwer Flask. Serwis należy otwierać przeglądarką, wchodząc
 Projekt składa się z następujących komponentów:
 - Foldery:
     - `data` - folder z danymi uzytymi do trenowania i testowania modelu w formacie YOLO
-    - `models` - folder z modelami (pretrenowaym i douczonym)
+    - `models` - folder z modelami (pretrenowanym i douczonym)
     - `runs` - folder ze statystykami i metrykami na temat uczenia (folder `train`) i walidacji (folder `val`) trenowanego modelu
     - `static`, `templates` - standardowe foldery dla HTML i CSS. Ponadto w folderze `static` znajduje się folder `results`, w którym serwis zapisuje przetwarzane obrazy
 - Skrypty
