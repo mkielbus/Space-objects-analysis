@@ -8,7 +8,7 @@ Analiza danych astrofizycznych za pomocą algorytmów przetwarzania obrazów.
 - Mateusz Kiełbus
 
 ## Założenia
-Przyjęta realizacja zakłada zbudowanie serwisu internetowego, używającego modelu detekcji obrazów YOLOv8, który umożliwia detekcję i klasyfikację planet układu słonecznego. Projekt zakłada zarówno dotrenowanie pretrenowanego modelu YOLO, jak i zbudowanie serwisu.
+Przyjęta realizacja zakłada zbudowanie serwisu internetowego, używającego modelu detekcji obrazów YOLOv8, który umożliwia detekcję i klasyfikację planet Układu Słonecznego. Projekt zakłada zarówno dotrenowanie pretrenowanego modelu YOLO, jak i zbudowanie serwisu.
 
 ## Cel
 Celem projektu jest prezentacja możliwości istniejących modeli uczenia maszynowego w kontekście analizy danych astrofizycznych. Dotyczy to zarówno ich mocnych stron, jak i ograniczeń.
@@ -30,7 +30,7 @@ pip install ultralytics
 ## Uruchomienie
 Przed uruchomieniem serwisu należy zainstalować całe w. w. oprogramowanie.
 
-Najlepiej jest uruchamiać serwis z przez IDE lub z terminala, znajdując się w katalogu głównym projektu.
+Najlepiej jest uruchamiać serwis przez IDE lub z terminala, znajdując się w katalogu głównym projektu.
 
 Sktyptem uruchamiającym serwis jest `prediction_service.py`, który należy uruchomić w przypadku IDE przyciskiem **run**, a w przypadku terminala poleceniem:
 ```
