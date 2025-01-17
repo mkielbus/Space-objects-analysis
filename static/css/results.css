@@ -40,3 +40,9 @@ a {
 a:hover {
     background-color: #0056b3;
 }
+
+img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
