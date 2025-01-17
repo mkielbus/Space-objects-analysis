@@ -1,12 +1,11 @@
 from ultralytics import YOLO
+from config import MODELS_DIR, DATA_DIR
 
 
 def main() -> None:
-    model = YOLO("yolov8n.pt")
-    model.train(data="data/config.yaml", epochs=1, project="runs", workers=4)
-    # results = model.val()  # evaluate model performance on the validation set
-    # results = model("https://ultralytics.com/images/bus.jpg")  # predict on an image
-    # success = model.export(format="onnx")  # export the model to ONNX format
+    model = YOLO(MODELS_DIR/"trained_model.pt")
+    # model.train(data="data/config.yaml", epochs=1, project="runs")
+    model.val(data="data/config.yaml", project="runs")
 
 
 if __name__ == "__main__":
