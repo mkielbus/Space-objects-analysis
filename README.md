@@ -46,7 +46,7 @@ Projekt składa się z następujących komponentów:
     - `data` - folder z danymi uzytymi do trenowania i testowania modelu w formacie YOLO
     - `models` - folder z modelami (pretrenowanym i douczonym)
     - `runs` - folder ze statystykami i metrykami na temat uczenia (folder `train`) i walidacji (folder `val`) trenowanego modelu
-    - `static`, `templates` - standardowe foldery dla HTML i CSS. Ponadto w folderze `static` znajduje się folder `results`, w którym serwis zapisuje przetwarzane obrazy
+    - `static`, `templates` - standardowe foldery dla HTML i CSS. Przed rozpoczęciem korzystania z aplikacji w folderze `static` należy utowrzyć folder `results`, w którym serwis będzie zapisywać przetwarzane obrazy
 - Skrypty
     - `config.py`
     - `model_wrapper.py`
